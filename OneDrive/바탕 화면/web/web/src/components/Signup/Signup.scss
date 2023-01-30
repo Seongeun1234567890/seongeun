@@ -1,0 +1,224 @@
+@font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.signup_text {
+    width: 132px;
+    height: 52px;
+    margin-left: 540px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #422E2E;
+}
+
+.signup_images {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    margin-left: 340px;
+    margin-right: 340px;
+}
+
+button[id=student_button], button[id=manager_button], button[id=enterprise_button] {
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    background-color: rgba($color: #000000, $alpha: 0.0);
+}
+
+.signupbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: -30px;
+}
+
+.signup_next:disabled {
+    width: 540px;
+    height: 44px;
+    margin-top: 87px;
+    background: #C6C1D1;
+    border: 1px solid #C6C1D1;
+    border-radius: 8px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #F5F5F5;
+}
+
+.signup_next {
+    width: 540px;
+    height: 44px;
+    margin-top: 87px;
+    background: #9785CB;
+    border: 1px solid #C6C1D1;
+    border-radius: 8px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #F5F5F5;
+}
+
+.schools, .departments {
+    margin-left: 330px;
+    margin-right: 330px;
+}
+
+.school_name, .department_name {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #404041;
+}
+
+.school_select {
+    margin-bottom: 16px;
+}
+
+.school_select, .department_select {
+    width: 540px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #C6C1D1;
+    border-radius: 8px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #404041;
+    padding-left: 24px;
+    margin-top: 8px;
+}
+
+.name, .phoneNumber, .id_name, .email_name {
+    width: 30px;
+    height: 21px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #404041;
+}
+
+.names, .phoneNumbers {
+    margin-left: 330px;
+    margin-right: 330px;
+}
+
+input[name=name], 
+input[name=phoneNumber], 
+input[name=id_input], 
+input[name=email_input],
+input[name=certificationNumber] {
+    width: 540px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #C6C1D1;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #404041;
+    box-sizing: border-box;
+    padding-left: 24px;
+}
+
+input[name=id_input] {
+    margin-bottom: -5px;
+}
+
+input[name=name] {
+    margin-bottom: 16px;
+}
+
+input[name=email_input] {
+    margin-bottom: -26px;
+}
+
+.ids, .emails4 {
+    margin-left: 330px;
+    margin-right: 330px;
+}
+
+.emails4 {
+    margin-top: 21px;
+}
+
+.Certifications {
+    margin-left: 330px;
+    margin-right: 330px;
+    margin-top: 16px;
+}
+
+.ConfirmPasswords {
+    margin-top: 16px;
+}
+
+.errorMesege_ID {
+    width: 386px;
+    height: 18px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #E03333;
+    margin-top: 10px;
+}
+
+.errorMesege_name, .errorMesege_phoneNumber {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #E03333;
+}
+
+.errorMesege_phoneNumber {
+    margin-top: 12px;
+}
+
+.email_errorInput {
+    outline: red;
+}
+
+.id_errorInput {
+    outline: red;
+}
+
+//
+
+input[type=radio]:checked + label>img {
+    border: 4px solid #9785CB;
+    border-radius: 14px;
+}
+
+input[type=radio] {
+    visibility: hidden;
+}
