@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import image from './image/Frame 56.svg';
 import './Repair_Request.scss';
 
+import logo_image from './image/Frame 253.svg';
+import logo_text from './image/TOOL.svg';
+
 function Repair_Request() {
 
   const goToLogin = () => {
