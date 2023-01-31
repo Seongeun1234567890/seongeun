@@ -6,6 +6,11 @@ import axios from "axios";
 
 function Signup3() {
 
+
+
+
+    
+
     const [userId, setUserId] = useState("");
     const [userPw, setUserPw] = useState("");
     const [userEmail, setUserEmail] = useState("");
@@ -34,6 +39,17 @@ function Signup3() {
             // Handle error.
             console.log('An error occurred:', error.response);
         });
+
+
+
+
+
+
+
+
+
+
+
 
     const [userNameError, setUserNameError] = useState(false);
     const [userPhoneNumberError, setUserPhoneNumberError] = useState(false);
@@ -80,8 +96,8 @@ function Signup3() {
                     <input 
                     name="name" 
                     value={userName}
-                    autoComplete="off" 
-                    onChange={onChangeUserName} 
+                    autoComplete="off"
+                    onChange={onChangeUserName}
                     onKeyUp={changeButton} 
                     className={userNameError && "errorInput"}
                     />
