@@ -27,21 +27,15 @@
 }
 
 .logo {
-  width: 96px;
+  width: 186px;
   height: 40px;
-  background: #f5f5f5;
-  border-radius: 100px;
-  font-family: "SpoqaHanSansNeo-Regular";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 130%;
-  text-align: center;
-  align-items: center;
-  letter-spacing: -0.005em;
-  color: #7739dc;
+  margin-left: 10px;
   box-sizing: border-box;
-  padding-top: 10px;
+}
+
+.logoText {
+  padding-bottom: 12px;
+  margin-left: 5px;
 }
 
 .miniInformation {

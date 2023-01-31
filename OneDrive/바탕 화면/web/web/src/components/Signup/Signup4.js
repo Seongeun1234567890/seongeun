@@ -51,15 +51,35 @@ function Signup4() {
 
                 <div className='ids'>
                     <span className='id_name'>아이디</span><br />
-                    <input 
-                        name="id_input"
-                        value={userId} 
-                        onChange={onChangeUserId} 
-                        onKeyUp={changeButton} 
-                        className={userIdError && "errorInput"}
-                    />
-                    {userIdError && <div class="errorMesege_ID">사용자 ID는 5자 이상이어야 하며 문자 또는 숫자를 포함해야 합니다.</div>}
+                    <div>
+                        <input 
+                            name="id_input"
+                            value={userId} 
+                            onChange={onChangeUserId} 
+                            onKeyUp={changeButton} 
+                            className={userIdError && "errorInput"}
+                        />
+                        <button 
+                        name='id_check' 
+                        type='submit'
+                        onClick={e => {
+                            if(userId.length === 0) {
+                                alert("아이디를 입력해주세요.")
+                            }
+                            else if(userId.length < 5) {
+                                alert("사용자 ID는 5자 이상이어야 하며 문자 또는 숫자를 포함해야 합니다.")
+                            }
+                            else {
+                                alert("사용 가능한 아이디입니다.")
+                            }
+                        }}
+                        >
+                            아이디 조회
+                        </button>
+                        {userIdError && <div class="errorMesege_ID">사용자 ID는 5자 이상이어야 하며 문자 또는 숫자를 포함해야 합니다.</div>}
+                    </div>
                 </div>
+                
 
                 <div className='emails4'>
                     <span className='email_name'>이메일</span><br />
@@ -81,10 +101,6 @@ function Signup4() {
                         variant="secondary"
                         disabled={submitting} 
                         onClick={e => {
-                            // if(userId.length > 4 && password.length > 7 && confirmPassword === password && email.length > 1) {
-                            //     e.stopPropagation();
-                            //     goTocomplete();
-                            // }
                             if(email.includes('@') && userId.length > 4) {
                                 e.stopPropagation();
                                 goTosignup5();

@@ -4,6 +4,9 @@ import './EditInfor.scss';
 import image from './image/Frame 56.svg';
 import { createGlobalStyle } from "styled-components";
 
+import logo_image from './image/Frame 253.svg';
+import logo_text from './image/TOOL.svg';
+
 
 function EditInfor() {
 
@@ -54,7 +57,10 @@ function EditInfor() {
     <div className="web">
       <div className="web_flex">
         <div className="navigation">
-          <div className="logo">로고</div>
+          <div className="logo">
+            <img className='logoImage' src={logo_image} alt="" />
+            <img className='logoText' src={logo_text} alt="" />
+          </div>
           <div className="miniInformation">
             {data3.map((data3) => (
               <div className="mini_student">

@@ -126,7 +126,6 @@ button[id=student_button], button[id=manager_button], button[id=enterprise_butto
 
 input[name=name], 
 input[name=phoneNumber], 
-input[name=id_input], 
 input[name=email_input],
 input[name=certificationNumber] {
     width: 540px;
@@ -147,7 +146,44 @@ input[name=certificationNumber] {
 }
 
 input[name=id_input] {
+    width: 384px;
+    height: 64px;
+    background: #FFFFFF;
+    border: 1px solid #C6C1D1;
+    border-radius: 8px;
+    margin-top: 8px;
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #404041;
+    box-sizing: border-box;
+    padding-left: 24px;
+
     margin-bottom: -5px;
+}
+
+button[name=id_check] {
+    width: 140px;
+    height: 64px;
+    margin-left: 16px;
+    background-color: #9785CB;
+    border: 1px solid #C6C1D1;
+    border-radius: 8px;
+
+    font-family: 'SpoqaHanSansNeo-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: -0.005em;
+    color: #F5F5F5;
+}
+
+button[name=id_check]:hover {
+    background-color: #7a64b1;
 }
 
 input[name=name] {

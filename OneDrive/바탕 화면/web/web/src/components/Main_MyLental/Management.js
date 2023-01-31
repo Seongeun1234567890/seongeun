@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import Management_Detailed from "./Management_Detailed";
 import { createGlobalStyle } from "styled-components";
 
+import logo_image from './image/Frame 253.svg';
+import logo_text from './image/TOOL.svg';
+
 function Management() {
     const GlobalStyle = createGlobalStyle`
     button[id="myList"] { color: #000; }
@@ -73,7 +76,10 @@ function Management() {
       <div className="web_flex">
 
         <div className="navigation">
-          <div className="logo">로고</div>
+          <div className="logo">
+            <img className='logoImage' src={logo_image} alt="" />
+            <img className='logoText' src={logo_text} alt="" />
+          </div>
           <div className="miniInformation">
             {data3.map((data3) => (
               <div className="mini_student">

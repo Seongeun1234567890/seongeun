@@ -76,7 +76,7 @@ function Login() {
                             onKeyUp={changeButton}
                             className={errors.id && "errorInput"}
                         />
-                        {errors.id && <span className="errorMessage">{errors.id}</span>}
+                        {errors.id && <span className="ErrorMessage">{errors.id}</span>}
                     </label>
 
                     <br />
@@ -95,7 +95,7 @@ function Login() {
                         />
                         <br />
                         {errors.password && (
-                            <span className="errorMessage">{errors.password}</span>
+                            <span className="ErrorMessage">{errors.password}</span>
                         )}
                     </label>
 

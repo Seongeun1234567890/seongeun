@@ -6,8 +6,34 @@ import axios from "axios";
 
 function Signup3() {
 
+    const [userId, setUserId] = useState("");
+    const [userPw, setUserPw] = useState("");
+    const [userEmail, setUserEmail] = useState("");
+    const [userStudentNumber, setUserStudentNumber] = useState("");
     const [userName, setUserName] = useState("");
     const [userPhoneNumber, setUserPhoneNumber] = useState("");
+    const [departmentId, setDepartmentId] = useState("");
+
+    axios
+        .post('http://120.142.105.189:5080/user/signUp', {
+            user_id: userId,
+            user_pw: userPw,
+            user_email: userEmail,
+            user_student_number: userStudentNumber,
+            user_name: userName,
+            user_phone_number: userPhoneNumber,
+            department_id: departmentId
+        })
+        .then(response => {
+            // Handle success.
+            console.log('Well done!');
+            console.log('User profile', response.data.user);
+            console.log('User token', response.data.jwt);
+        })
+        .catch(error => {
+            // Handle error.
+            console.log('An error occurred:', error.response);
+        });
 
     const [userNameError, setUserNameError] = useState(false);
     const [userPhoneNumberError, setUserPhoneNumberError] = useState(false);
@@ -82,7 +108,7 @@ function Signup3() {
                         variant="secondary"
                         disabled={submitting} 
                         onClick={e => {
-                            if(userName.length > 0 && userPhoneNumber.length > 6) {
+                            if(userName.length > 2 && userPhoneNumber.length > 6) {
                                 e.stopPropagation();
                                 goTosignup4();
                             }

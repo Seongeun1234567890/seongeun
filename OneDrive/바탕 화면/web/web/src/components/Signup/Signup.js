@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Signup.scss";
 import { createGlobalStyle } from "styled-components";
+import axios from "axios";
 
 import studentImg from './image/Frame 17.svg';
 import managerImg from './image/Frame 18.svg';
@@ -11,6 +12,35 @@ import enterpriseImg from './image/Frame 20.svg';
 // import enterpriseImg_hover from './image/Frame 23.svg';
 
 function Signup() {
+
+    // const [userId, setUserId] = useState("");
+    // const [userPw, setUserPw] = useState("");
+    // const [userEmail, setUserEmail] = useState("");
+    // const [userStudentNumber, setUserStudentNumber] = useState("");
+    // const [userName, setUserName] = useState("");
+    // const [userPhoneNumber, setUserPhoneNumber] = useState("");
+    // const [departmentId, setDepartmentId] = useState("");
+
+    // axios
+    //     .post('http://120.142.105.189:5080/user/signUp', {
+    //         user_id: userId,
+    //         user_pw: userPw,
+    //         user_email: userEmail,
+    //         user_student_number: userStudentNumber,
+    //         user_name: userName,
+    //         user_phone_number: userPhoneNumber,
+    //         department_id: departmentId
+    //     })
+    //     .then(response => {
+    //         // Handle success.
+    //         console.log('Well done!');
+    //         console.log('User profile', response.data.user);
+    //         console.log('User token', response.data.jwt);
+    //     })
+    //     .catch(error => {
+    //         // Handle error.
+    //         console.log('An error occurred:', error.response);
+    //     });
 
     const GlobalStyle = createGlobalStyle`
     body {
